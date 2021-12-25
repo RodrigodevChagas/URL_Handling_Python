@@ -56,9 +56,3 @@ class URL_extractor:
 # Using the eq method to match same url string instead of returning the memory spot.
     def __eq__(self, other):
         return self.url == other.url
-
-
-url = URL_extractor('https://twitter.com/search?q=Seth%20Rollins&src=typed_query')
-url2 = URL_extractor('https://twitter.com/search?q=Seth%20Rollins&src=typed_query')
-valor = url.get_value('src')
-print(url)
